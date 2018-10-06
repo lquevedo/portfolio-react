@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="container">
+    <section id="aboutContainer">
       <nav className="stickyNav tertiaryNav" id="tertiary">
         <h2>About</h2>
       </nav>
@@ -30,9 +30,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container road" id="rv">
-        <div className="road__left">
-          <div className="road__left--text">
+      <div className="container r2h" id="rv">
+        <div className="r2h__left"r2h>
+          <div className="r2h__left--text">
             <h2>Road To Hire</h2>
             <p>
               Road to Hire has been the greatest experience of my life. Road to
@@ -51,10 +51,10 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="road__images" id="rvImage">
-          <div className="road__images--one" />
-          <div className="road__images--two" />
-          <div className="road__images--three" />
+        <div className="r2h__images" id="rvImage">
+          <div className="r2h__images--one" />
+          <div className="r2h__images--two" />
+          <div className="r2h__images--three" />
         </div>
       </div>
     </section>

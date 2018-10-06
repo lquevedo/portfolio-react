@@ -7,7 +7,7 @@ const ProjectBanner = props => {
       <div className="project__text">
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
-        <button className="redButton">GitHub</button>
+        <a href={props.url} target="_blank" rel="noopener noreferrer"><button className="redButton">GitHub</button></a>
       </div>
     </div>
   );

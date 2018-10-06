@@ -1,19 +1,22 @@
 const projectList = {
     "projects": [
       {  
-        "title": "MyMove Website",
-        "description": "Midterm project for Road to Hire",
-        "image": "http://funkyimg.com/i/2LNaQ.png"
+        "title": "Ecommerce Website",
+        "description": "Ecommerce project built using everything I learned during Road to Hire",
+        "image": "http://funkyimg.com/i/2LNaQ.png",
+        "url": "https://github.com/lquevedo/Socko"
       },
       {  
-        "title": "This is my second project",
-        "description": "Midterm project",
-        "image": "http://funkyimg.com/i/2LMvz.png"
+        "title": "MyMove",
+        "description": "MyMove site replicated from sketch file",
+        "image": "http://funkyimg.com/i/2LMvz.png",
+        "url": "https://github.com/lquevedo/mymove.github.io"
       },
       {  
-        "title": "This is my third project",
-        "description": "Midterm project",
-        "image": "http://funkyimg.com/i/2LNd2.png"
+        "title": "Original Portfolio Site",
+        "description": "First portfolio site made using HTML and CSS",
+        "image": "http://funkyimg.com/i/2LSon.jpg",
+        "url": "https://github.com/lquevedo/portfolio"
       }
     ]
   }

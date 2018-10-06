@@ -6,25 +6,25 @@ import projectList from "./json";
 import About from "./components/about";
 import Contact from "./components/contact";
 
-let navbarOne, navbarStick, container1, containerStick, containerImages, navbarTwo, navbarTwoStick, rv, rvShow, rvHello;
+let projectNav, projectNavStick, aboutContainer, aboutContainerStick, aboutContainerImages, aboutNav, aboutNavStick, rvContainer, rvContainerStick, rvImages;
 window.onload = () => {
-  navbarOne = document.getElementById("stickyNav");
-  navbarStick = navbarOne.offsetTop;
-  container1 = document.getElementById("container");
-  containerImages = document.getElementById("container__images");
-  containerStick = container1.offsetTop;
-  navbarTwo = document.getElementById("tertiary");
-  navbarTwoStick = navbarTwo.offsetTop;
-  rv = document.getElementById("rv");
-  rvShow = rv.offsetTop;
-  rvHello = document.getElementById("rvImage");
+  projectNav = document.getElementById("stickyNav");
+  projectNavStick = projectNav.offsetTop;
+  aboutContainer = document.getElementById("aboutContainer");
+  aboutContainerImages = document.getElementById("container__images");
+  aboutContainerStick = aboutContainer.offsetTop;
+  aboutNav = document.getElementById("tertiary");
+  aboutNavStick = aboutNav.offsetTop;
+  rvContainer = document.getElementById("rv");
+  rvContainerStick = rvContainer.offsetTop;
+  rvImages = document.getElementById("rvImage");
 };
 window.onscroll = () => myFunction();
 let myFunction = () => {
-  window.pageYOffset >= navbarStick ? navbarOne.classList.add("sticky") : navbarOne.classList.remove("sticky");
-  window.pageYOffset >= containerStick ? containerImages.classList.add("show") : containerImages.classList.add("hide");
-  window.pageYOffset >= rvShow ? rvHello.classList.add("show") : rvHello.classList.add("hide");
-  window.pageYOffset >= navbarTwoStick ? navbarTwo.classList.add("sticky2") : navbarTwo.classList.remove("sticky2");
+  window.pageYOffset >= projectNavStick ? projectNav.classList.add("sticky") : projectNav.classList.remove("sticky");
+  window.pageYOffset >= aboutContainerStick ? aboutContainerImages.classList.add("show") : aboutContainerImages.classList.add("hide");
+  window.pageYOffset >= rvContainerStick ? rvImages.classList.add("show") : rvImages.classList.add("hide");
+  window.pageYOffset >= aboutNavStick ? aboutNav.classList.add("sticky2") : aboutNav.classList.remove("sticky2");
 };
 
 class App extends Component {
