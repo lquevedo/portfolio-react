@@ -30,21 +30,6 @@
     p {
       font-size: 1.3rem;
     }
-    button {
-      border: none;
-      margin-top: 40px;
-      text-transform: uppercase;
-      padding: 15px 60px;
-      background: rgb(196, 23, 23);
-      transition: transform 0.2s;
-      border-radius: 25px;
-      color: white;
-      font-weight: 400;
-      outline: none;
-      &:hover {
-        transform: scale(0.8);
-      }
-    }
   }
 }
 .stickyNav {

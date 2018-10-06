@@ -1,13 +1,29 @@
-@import '../partials/normalizer';
-@import '../partials/header';
-@import '../partials/project';
-@import '../partials/about';
-@import '../partials/contact';
+@import "../partials/normalizer";
+@import "../partials/header";
+@import "../partials/project";
+@import "../partials/about";
+@import "../partials/contact";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.redButton {
+  border: none;
+  margin-top: 40px;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  background: rgb(196, 23, 23);
+  transition: transform 0.2s;
+  border-radius: 25px;
+  color: white;
+  font-weight: 400;
+  outline: none;
+  &:hover {
+    transform: scale(0.8);
+  }
 }

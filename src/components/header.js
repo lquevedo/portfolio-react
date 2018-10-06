@@ -9,7 +9,7 @@ const Header = () => {
             <section className="banner">
                     <h2>Aspiring Web Developer</h2>
                     <p>Charlotte, NC</p>
-                    <button>Resume Pdf</button>
+                    <button className="redButton">Resume</button>
             </section>
         </header>
     );

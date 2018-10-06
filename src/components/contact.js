@@ -30,12 +30,7 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="subject">Subject:</label>
-            <input
-              type="text"
-              name="Subject"
-              className="subject"
-              placeholder="Subject"
-            />
+            <input type="text" name="Subject" className="subject" placeholder="Subject"/>
           </div>
           <div>
             <label htmlFor="comments" className="comments">
@@ -43,6 +38,7 @@ const Contact = () => {
             </label>
             <textarea name="comments" />
           </div>
+          <button className="redButton">Submit</button>
         </form>
       </div>
     </section>

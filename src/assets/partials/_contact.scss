@@ -58,6 +58,9 @@
         background: rgb(28, 30, 38);
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.213);
+        @media only screen and (max-width: 1400px) {
+          margin-top: 0;
+        }
       }
       .comments {
         display: block;
@@ -65,6 +68,9 @@
         width: 100%;
         text-align: left;
         color: white;
+        @media only screen and (max-width: 1400px) {
+          margin-top: 30px;
+        }
       }
       textarea {
         margin-top: 50px;

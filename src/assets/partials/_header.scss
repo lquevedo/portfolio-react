@@ -37,17 +37,4 @@
   p {
     font-size: 1.2rem;
   }
-  button {
-    border: 1px solid white;
-    margin-top: 20px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    background: rgb(49, 49, 49);
-    border-radius: 20px;
-    color: white;
-    font-weight: 700;
-    &:hover {
-      background: rgb(88, 88, 88);
-    }
-  }
 }

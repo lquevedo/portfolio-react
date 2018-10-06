@@ -7,7 +7,7 @@ const ProjectBanner = props => {
       <div className="project__text">
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
-        <button>GitHub</button>
+        <button className="redButton">GitHub</button>
       </div>
     </div>
   );
