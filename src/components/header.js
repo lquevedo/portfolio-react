@@ -9,7 +9,7 @@ const Header = () => {
       <section className="banner">
         <h2>Fullstack Web Developer</h2>
         <p>Charlotte, NC</p>
-        <a href="/resume.pdf" download><button className="redButton">Resume</button></a>
+        <a href="/portfolio-react/resume.pdf" download><button className="redButton">Resume</button></a>
       </section>
     </header>
   );

@@ -3,27 +3,37 @@
   position: relative;
   width: 100%;
   text-align: center;
-  img {
-    height: 100%;
-    width: 100%;
-    // filter: blur(3px);
+  background: black;
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  &__image {
+    height: 60%;
+    width: 50%;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    background: black;
+    transition: transform 0.3s;
+    img {
+      height: 100%;
+      width: 100%;
+      filter: brightness(70%);
+    }
   }
   &__text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    height: 60%;
+    width: 50%;
     color: white;
-    background-image: linear-gradient(
-      to right,
-      rgba(28, 26, 26, 0.8),
-      rgba(29, 26, 26, 0.96)
-    );
     letter-spacing: 2px;
+    padding: 10px;
     h2 {
       font-size: 3rem;
     }
