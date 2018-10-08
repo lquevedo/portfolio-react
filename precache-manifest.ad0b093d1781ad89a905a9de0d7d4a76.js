@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "revision": "0bc532eac697b88907841729b2b72a86",
-    "url": "/portfolio-react/static/media/triangle.0bc532ea.png"
+    "revision": "dee5886d3019766e035ba5ea880e8b25",
+    "url": "/portfolio-react/static/media/rv1.dee5886d.jpg"
   },
   {
-    "revision": "41911f3a91133e31e302",
-    "url": "/portfolio-react/static/css/main.1e34f2e3.chunk.css"
+    "revision": "28bf154edf32610fbd80",
+    "url": "/portfolio-react/static/css/main.c765dc63.chunk.css"
   },
   {
-    "revision": "fed7386c7ae248cddea2",
-    "url": "/portfolio-react/static/js/1.fed7386c.chunk.js"
+    "revision": "558056b4c421c6a9d748",
+    "url": "/portfolio-react/static/js/1.558056b4.chunk.js"
   },
   {
     "revision": "9338e8a022e42c6bc02f",
     "url": "/portfolio-react/static/js/runtime~main.9338e8a0.js"
   },
   {
-    "revision": "23a91fe37cf850dc8022106180128beb",
-    "url": "/portfolio-react/static/media/rv3.23a91fe3.jpg"
-  },
-  {
     "revision": "3168989d69abeece719ab109bc401d85",
     "url": "/portfolio-react/static/media/image2.3168989d.jpg"
   },
   {
-    "revision": "41911f3a91133e31e302",
-    "url": "/portfolio-react/static/js/main.41911f3a.chunk.js"
+    "revision": "23a91fe37cf850dc8022106180128beb",
+    "url": "/portfolio-react/static/media/rv3.23a91fe3.jpg"
+  },
+  {
+    "revision": "28bf154edf32610fbd80",
+    "url": "/portfolio-react/static/js/main.28bf154e.chunk.js"
+  },
+  {
+    "revision": "0bc532eac697b88907841729b2b72a86",
+    "url": "/portfolio-react/static/media/triangle.0bc532ea.png"
   },
   {
     "revision": "bd2d02a3234ef5362e7b209f75e4f101",
     "url": "/portfolio-react/static/media/image3.bd2d02a3.jpg"
-  },
-  {
-    "revision": "dee5886d3019766e035ba5ea880e8b25",
-    "url": "/portfolio-react/static/media/rv1.dee5886d.jpg"
   },
   {
     "revision": "7caebea4968dc5b84a44e8e43e69f3fe",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/banner_image.4ee94693.jpg"
   },
   {
-    "revision": "9ecef1dff6c0a9b180605894f9ac1ca7",
+    "revision": "3698bbe5415d2c64e946352aa9f63c15",
     "url": "/portfolio-react/index.html"
   }
 ];
