@@ -1,6 +1,6 @@
 import React from "react";
-
 const Contact = () => {
+
   return (
     <section className="contact">
       <div className="contact__text">
@@ -41,6 +41,9 @@ const Contact = () => {
           <button className="redButton">Submit</button>
         </form>
       </div>
+
+    <div class="elevator-button"></div>
+
     </section>
   );
 };

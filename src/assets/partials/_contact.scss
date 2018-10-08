@@ -125,3 +125,13 @@
     margin-left: 15px;
   }
 }
+
+.elevator-button {
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow.png);
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
+}

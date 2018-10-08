@@ -23,8 +23,8 @@ const About = () => {
               from the Road to Hire program.
             </li>
             <li>
-              <span>Skills</span> include: HTML, CSS, SCSS, Javascript, React,
-              AJAX, Node, API's, Mongo, MySQL
+              <span>Skills</span> include: HTML, CSS, SCSS, Javascript, ReactJS,
+              AJAX, NodeJS, API's, MongoDB, MySQL
             </li>
           </ul>
         </div>
@@ -36,7 +36,7 @@ const About = () => {
             <h2>Road To Hire</h2>
             <p>
               Road to Hire has been the greatest experience of my life. Road to
-              Hire is a nonprofit organization that promotes economic mobility
+              Hire is a non-profit organization that promotes economic mobility
               for motivated young adults, regardless of their ability to afford
               college.
             </p>

@@ -5,6 +5,7 @@ import Project from "./components/project";
 import projectList from "./json";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Elevator from 'elevator.js';
 
 let projectNav, projectNavStick, aboutContainer, aboutContainerStick, aboutContainerImages, aboutNav, aboutNavStick, rvContainer, rvContainerStick, rvImages;
 window.onload = () => {
@@ -18,7 +19,14 @@ window.onload = () => {
   rvContainer = document.getElementById("rv");
   rvContainerStick = rvContainer.offsetTop;
   rvImages = document.getElementById("rvImage");
+  let elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    targetElement: document.querySelector('#elevator-target'),
+    duration: 2000 // milliseconds
+    });
+    elevator.elevate();
 };
+
 window.onscroll = () => myFunction();
 let myFunction = () => {
   window.pageYOffset >= projectNavStick ? projectNav.classList.add("sticky") : projectNav.classList.remove("sticky");
