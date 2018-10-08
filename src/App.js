@@ -19,9 +19,9 @@ window.onload = () => {
   rvContainer = document.getElementById("rv");
   rvContainerStick = rvContainer.offsetTop;
   rvImages = document.getElementById("rvImage");
+
   let elevator = new Elevator({
     element: document.querySelector('.elevator-button'),
-    targetElement: document.querySelector('#elevator-target'),
     duration: 2000 // milliseconds
     });
     elevator.elevate();
