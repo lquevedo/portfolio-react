@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "0bc532eac697b88907841729b2b72a86",
-    "url": "/portfolio-react/static/media/triangle.0bc532ea.png"
+    "revision": "3168989d69abeece719ab109bc401d85",
+    "url": "/portfolio-react/static/media/image2.3168989d.jpg"
   },
   {
     "revision": "a196d213a247ac66e68c",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/rv3.23a91fe3.jpg"
   },
   {
-    "revision": "3168989d69abeece719ab109bc401d85",
-    "url": "/portfolio-react/static/media/image2.3168989d.jpg"
+    "revision": "0bc532eac697b88907841729b2b72a86",
+    "url": "/portfolio-react/static/media/triangle.0bc532ea.png"
   },
   {
     "revision": "a196d213a247ac66e68c",
