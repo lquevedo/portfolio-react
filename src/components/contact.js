@@ -8,6 +8,7 @@ const Contact = () => {
           <span>Contact</span> Me
         </h2>
         <p>If you have any questions, feel free to reach out to me.</p>
+        <a href="https://www.linkedin.com/in/luis-quevedo-109324168/" target="_blank" rel="noopener noreferrer"><p>Click here to find me on <span>LinkedIn!</span></p></a>
         <div className="whitespace">
           <div className="triangle" />
         </div>
@@ -43,6 +44,10 @@ const Contact = () => {
       </div>
 
     <div class="elevator-button"></div>
+    <div className="contact__personalContact">
+      <ul>
+      </ul>
+    </div>
 
     </section>
   );

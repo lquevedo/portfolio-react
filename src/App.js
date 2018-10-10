@@ -22,7 +22,7 @@ window.onload = () => {
 
   let elevator = new Elevator({
     element: document.querySelector('.elevator-button'),
-    duration: 2000 // milliseconds
+    duration: 1000 // milliseconds
     });
     elevator.elevate();
 };

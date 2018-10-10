@@ -1,8 +1,10 @@
 @import "../partials/normalizer";
+@import "../partials/mixins";
 @import "../partials/header";
 @import "../partials/project";
 @import "../partials/about";
 @import "../partials/contact";
+@import "../partials/variables";
 
 * {
   box-sizing: border-box;

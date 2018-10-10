@@ -1,44 +1,45 @@
 .project {
-  height: 750px;
   position: relative;
-  width: 100%;
   text-align: center;
   background: black;
-  display: flex;
   border-bottom: 1px solid black;
-  align-items: center;
-  justify-content: space-between;
+  @include dimensions (750px, 100%);
+  @include flex (flex, space-between, center);
   @media only screen and (max-width: 1400px) {
     flex-direction: column;
   }
+  @media only screen and (max-width: 700px) {
+    height: 800px;
+  }
   &__image {
-    height: 60%;
-    width: 50%;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-    display: flex;
-    align-items: center;
     background: black;
     transition: transform 0.3s;
+    @include dimensions (60%, 50%);
+    @include flex (flex, center, center);
     @media only screen and (max-width: 1400px) {
-      height: 60%;
-    width: 80%;
+      @include dimensions (60%, 60%);
+      margin-top: 70px;
+    }
+    @media only screen and (max-width: 700px) {
+      clip-path: none;
+      @include dimensions (300px, 100%);
     }
     img {
-      height: 100%;
-      width: 100%;
+      @include dimensions (100%, 100%);
       filter: brightness(70%);
     }
   }
   &__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 60%;
-    width: 50%;
     color: white;
     letter-spacing: 2px;
     padding: 10px;
+    @include dimensions (60%, 50%);
+    @include flex (flex, center, center);
+    @media only screen and (max-width: 700px) {
+      width: 90%;
+    }
     h2 {
       font-size: 3rem;
     }
@@ -49,13 +50,10 @@
 }
 .stickyNav {
   background: black;
-  height: 90px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   overflow: hidden;
+  @include dimensions (90px, 100%);
+  @include flex (flex, center, center);
   h2 {
     font-weight: 200;
     text-transform: uppercase;

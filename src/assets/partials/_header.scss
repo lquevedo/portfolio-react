@@ -1,14 +1,11 @@
 .nav {
   background: black;
-  height: 90px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: sticky;
-  width: 100%;
   top: 0;
   z-index: 10;
+  @include dimensions (90px, 100%);
+  @include flex (flex, center, center);
   h1 {
     font-weight: 200;
     text-transform: uppercase;
@@ -20,17 +17,13 @@
 }
 .banner {
   color: white;
-  background-image: url("../images/banner_image.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
+  @include flex (flex, center, center);
+  @include dimensions (750px, 100%);
+  @include background (url("../images/banner_image.jpg"), cover, no-repeat, top);
   h2 {
     font-size: 2.5rem;
   }

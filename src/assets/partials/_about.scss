@@ -1,22 +1,16 @@
 .container {
+  color: white;
+  background: black;
+  flex-direction: row;
+  @include dimensions (100vh, 100%);
+  @include flex (flex, center, center);
   @media only screen and (max-width: 1400px) {
     flex-direction: column;
   }
-  color: white;
-  background: black;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   &__right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+    @include dimensions (100%, 50%);
+    @include flex (flex, center, center);
     @media only screen and (max-width: 700px) {
       width: 100%;
       display: block;
@@ -41,70 +35,53 @@
     }
   }
   &__images {
-    height: 100%;
-    width: 50%;
     position: relative;
     opacity: 0;
+    @include dimensions (100%, 50%);
     @media only screen and (max-width: 1400px) {
-      width: 100%;
       display: flex;
-      justify-content: center;
-      height: 100%;
+      justify-content: space-around;
+      @include dimensions (100%, 100%);
+      flex-direction: column;
     }
     @media only screen and (max-width: 700px) {
       width: 100%;
       display: flex;
       justify-content: center;
-      flex-direction: column;
     }
     &--one {
-      background: url("../images/image1.JPG");
-      background-size: cover;
-      width: 300px;
-      height: 400px;
-      position: absolute;
-      top: 100px;
-      left: 30px;
+      @include dimensions (400px, 300px);
+      @include background (url("../images/image1.JPG"), cover, no-repeat, left);
+      @include position (absolute, 100px, 30px);
       @media only screen and (max-width: 1400px) {
-        position: initial;
-        width: 400px;
-        height: 300px;
+        display: none;
       }
       @media only screen and (max-width: 700px) {
         display: none;
       }
     }
     &--two {
-      background: url("../images/image2.jpg");
-      background-size: cover;
-      width: 400px;
-      height: 300px;
-      position: absolute;
-      top: 200px;
-      left: 250px;
+      @include dimensions (300px, 400px);
+      @include background (url("../images/image2.jpg"), cover, no-repeat, center);
+      @include position (absolute, 200px, 250px);
       @media only screen and (max-width: 1400px) {
         position: initial;
+        @include dimensions (500px, 100%);
       }
       @media only screen and (max-width: 700px) {
-        width: 100%;
-        height: 1000px;
+        @include dimensions (1000px, 100%);
         background-position: center;
       }
     }
     &--three {
-      background: url("../images/image3.jpg");
-      background-size: cover;
-      width: 400px;
-      height: 300px;
-      position: absolute;
-      top: 450px;
-      left: 130px;
+      @include dimensions (300px, 400px);
+      @include background (url("../images/image3.jpg"), cover, no-repeat, center);
+      @include position (absolute, 450px, 130px);
       @media only screen and (max-width: 1400px) {
-        position: initial;
+        display: none;
       }
       @media only screen and (max-width: 700px) {
-        width: 100%;
-        height: 1000px;
+        @include dimensions (1000px, 100%);
         background-position: center;
       }
     }
@@ -118,21 +95,11 @@
 }
 
 @keyframes show {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
 }
 
 .r2h {
@@ -140,65 +107,49 @@
     height: 100%;
   }
   &__left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    @include dimensions (100%, 50%);
+    @include flex (flex, center, center);
     @media only screen and (max-width: 1400px) {
       width: 100%;
     }
     &--text {
-      width: 80%;
-      height: 80%;
       font-weight: 200;
-      display: flex;
-      align-items: center;
-      text-align: center;
       flex-direction: column;
       justify-content: flex-end;
+      text-align: center;
+      @include dimensions (80%, 80%);
+      @include flex (flex, center, center);
       p {
         font-size: 1.5rem;
       }
     }
   }
   &__images {
-    width: 50%;
-    height: 100%;
     opacity: 0;
     position: relative;
+    @include dimensions (100%, 50%);
     @media only screen and (max-width: 1400px) {
       width: 100%;
       display: flex;
       justify-content: center;
     }
     &--one {
-      background: url("../images/rv3.jpg");
-      background-size: cover;
-      width: 600px;
-      height: 40%;
-      position: absolute;
-      top: 100px;
-      left: 100px;
+      @include dimensions (40%, 600px);
+      @include background (url("../images/rv3.jpg"), cover, no-repeat, center);
+      @include position (absolute, 100px, 100px);
       @media only screen and (max-width: 1400px) {
         position: initial;
-        height: 100%;
-        width: 50%;
+        @include dimensions (100%, 50%);
       }
     }
     &--two {
-      background: url("../images/rv1.jpg");
-      background-size: cover;
-      width: 600px;
-      height: 40%;
-      position: absolute;
-      bottom: 50px;
-      left: 40px;
+      @include dimensions (40%, 600px);
+      @include background (url("../images/rv1.jpg"), cover, no-repeat, center);
+      @include position (absolute, 430px, 40px);
       @media only screen and (max-width: 1400px) {
         position: initial;
-        height: 100%;
-        width: 50%;
+        @include dimensions (100%, 50%);
       }
     }
   }

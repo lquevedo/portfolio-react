@@ -1,0 +1,23 @@
+@mixin dimensions ($h, $w) {
+    height: $h;
+    width: $w;
+};
+
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+};
+
+@mixin background ($background, $size, $repeat, $position){
+    background: $background;
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+};
+
+@mixin position ($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
