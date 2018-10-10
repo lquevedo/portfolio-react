@@ -7,7 +7,7 @@ const Contact = () => {
         <h2>
           <span>Contact</span> Me
         </h2>
-        <p>If you have any questions, feel free to reach out to me.</p>
+        <p className="contact__text--p">If you have any questions, feel free to reach out to me.</p>
         <a href="https://www.linkedin.com/in/luis-quevedo-109324168/" target="_blank" rel="noopener noreferrer"><p>Click here to find me on <span>LinkedIn!</span></p></a>
         <div className="whitespace">
           <div className="triangle" />
