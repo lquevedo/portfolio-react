@@ -16,6 +16,7 @@ const Project = props => {
               desc={project.description}
               image={project.image}
               url={project.url}
+              website={project.website}
             />
           );
         })}

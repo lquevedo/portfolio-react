@@ -1,17 +1,20 @@
 import React from "react";
+import InViewMonitor from "react-inview-monitor";
 
 const About = () => {
   return (
-    <section id="aboutContainer">
-      <nav className="stickyNav tertiaryNav" id="tertiary">
+    <section>
+      <nav className="stickyNav tertiaryNav">
         <h2>About</h2>
       </nav>
       <div className="container">
-        <div className="container__images" id="container__images">
-          <div className="container__images--one" />
-          <div className="container__images--two" />
-          <div className="container__images--three" />
-        </div>
+        <InViewMonitor
+          classNameNotInView="container__images"
+          classNameInView="container__images show">
+            <div className="container__images--one" />
+            <div className="container__images--two" />
+            <div className="container__images--three" />
+        </InViewMonitor>
         <div className="container__right">
           <ul>
             <li>Hello, I'm Luis.</li>
@@ -30,8 +33,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container r2h" id="rv">
-        <div className="r2h__left"r2h>
+      <div className="container r2h">
+        <div className="r2h__left">
           <div className="r2h__left--text">
             <h2>Road To Hire</h2>
             <p>
@@ -51,11 +54,13 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="r2h__images" id="rvImage">
-          <div className="r2h__images--one" />
-          <div className="r2h__images--two" />
-          <div className="r2h__images--three" />
-        </div>
+        <InViewMonitor
+          classNameNotInView="r2h__images"
+          classNameInView="r2h__images show">
+            <div className="r2h__images--one" />
+            <div className="r2h__images--two" />
+            <div className="r2h__images--three" />
+        </InViewMonitor>
       </div>
     </section>
   );

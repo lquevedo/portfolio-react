@@ -43,7 +43,7 @@ const Contact = () => {
         </form>
       </div>
 
-    <div class="elevator-button"></div>
+    <div className="elevator-button"></div>
     <div className="contact__personalContact">
       <ul>
       </ul>

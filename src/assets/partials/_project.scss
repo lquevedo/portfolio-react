@@ -1,5 +1,6 @@
 .project {
   position: relative;
+  opacity: 0;
   text-align: center;
   background: black;
   border-bottom: 1px solid black;
@@ -47,6 +48,15 @@
       font-size: 1.3rem;
     }
   }
+  &__buttons {
+    width: 400px;
+    @include flex (flex, space-between, none);
+    @media only screen and (max-width: 700px) {
+      width: 250px;
+      flex-direction: column;
+    }
+  }
+  
 }
 .stickyNav {
   background: black;
@@ -54,21 +64,12 @@
   overflow: hidden;
   @include dimensions (90px, 100%);
   @include flex (flex, center, center);
+  position: sticky;
+  top: 0;
+  z-index: 10;
   h2 {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 2.2rem;
   }
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-
-.sticky2 {
-  position: sticky;
-  top: 0;
-  z-index: 30;
 }

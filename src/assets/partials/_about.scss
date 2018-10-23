@@ -88,12 +88,6 @@
   }
 }
 
-.hide {
-  animation-name: hide;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-}
-
 @keyframes show {
   0% {opacity: 0;}
   25% {opacity: 0.25;}
