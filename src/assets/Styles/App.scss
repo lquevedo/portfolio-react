@@ -5,6 +5,8 @@
 @import "../partials/about";
 @import "../partials/contact";
 @import "../partials/variables";
+@import "../partials/overlay";
+@import "../partials/animation";
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,6 @@ body {
 
 .redButton {
   border: none;
-  margin-top: 40px;
   text-transform: uppercase;
   padding: 15px 60px;
   background: rgb(196, 23, 23);
@@ -29,4 +30,11 @@ body {
   &:hover {
     transform: scale(0.8);
   }
+  @media only screen and (max-width: 700px) {
+    padding: 15px 40px;
+  }
+}
+
+.margin-top {
+  margin-top:40px;
 }

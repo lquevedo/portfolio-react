@@ -39,7 +39,7 @@ const Contact = () => {
             </label>
             <textarea name="comments" />
           </div>
-          <button className="redButton">Submit</button>
+          <button className="redButton margin-top">Submit</button>
         </form>
       </div>
 

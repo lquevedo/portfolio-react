@@ -1,13 +1,14 @@
 import React from "react";
 import ProjectBanner from "./projectBanner";
+import ProjectChallenges from './projectChallenges';
 
 const Project = props => {
   return (
     <section>
-      <nav className="stickyNav" id="stickyNav">
+      <nav className="stickyNav">
         <h2>Projects</h2>
       </nav>
-      <div>
+      <>
         {props.projectList.projects.map(project => {
           return (
             <ProjectBanner
@@ -20,7 +21,25 @@ const Project = props => {
             />
           );
         })}
-      </div>
+        <div className="project__challenges">
+        {props.projectList.challenges.map(project => {
+          return (
+            <ProjectChallenges
+              key={project.title}
+              title={project.title}
+              desc={project.description}
+              url={project.url}
+              website={project.website}
+              requirements={project.requirements}
+              images={project.images}
+              showModal = {props.showModal}
+              hideModal={props.hideModal}
+              modal={props.modal}
+            />
+          );
+        })}
+        </div>
+      </>
     </section>
   );
 };

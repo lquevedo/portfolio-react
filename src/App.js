@@ -11,7 +11,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      projectList
+      projectList,
+      showModal: false
     };
   }
 
@@ -23,14 +24,18 @@ class App extends Component {
     elevator.elevate();
   }
 
+  hideModal = () => {
+    this.setState({showModal: false});
+  };
+
   render() {
     return (
-      <div>
+      <>
         <Header />
-        <Project projectList={this.state.projectList} />
+        <Project projectList={this.state.projectList} showModal={this.showModal} hideModal={this.hideModal} modal={this.state.showModal}/>
         <About />
         <Contact />
-      </div>
+      </>
     );
   }
 }

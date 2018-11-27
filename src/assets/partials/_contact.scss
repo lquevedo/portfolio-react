@@ -118,7 +118,7 @@
   bottom: 0;
   left: 50%;
   @include dimensions (10px, 10px);
-  @include background (url("../images/triangle.png"), 10px, no-repeat, center);
+  @include background (url("/images/triangle.png"), 10px, no-repeat, center);
   &::before,
   &::after {
     content: "";
@@ -151,7 +151,7 @@
   transform: rotate(180deg);
   cursor: pointer;
   @include dimensions (40px, 40px);
-  @include background (url(../images/arrow.png), cover, no-repeat, center);
+  @include background (url('/images/arrow.png'), cover, no-repeat, center);
   @media only screen and (max-width: 700px) {
     display: none;
   }

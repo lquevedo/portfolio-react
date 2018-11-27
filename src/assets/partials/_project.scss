@@ -4,30 +4,30 @@
   text-align: center;
   background: black;
   border-bottom: 1px solid black;
-  @include dimensions (750px, 100%);
-  @include flex (flex, space-between, center);
+  @include dimensions(750px, 100%);
+  @include flex(flex, space-between, center);
   @media only screen and (max-width: 1400px) {
     flex-direction: column;
   }
   @media only screen and (max-width: 700px) {
-    height: 800px;
+    height: 100vh;
   }
   &__image {
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
     background: black;
     transition: transform 0.3s;
-    @include dimensions (60%, 50%);
-    @include flex (flex, center, center);
+    @include dimensions(60%, 50%);
+    @include flex(flex, center, center);
     @media only screen and (max-width: 1400px) {
-      @include dimensions (60%, 60%);
+      @include dimensions(60%, 60%);
       margin-top: 70px;
     }
     @media only screen and (max-width: 700px) {
       clip-path: none;
-      @include dimensions (300px, 100%);
+      @include dimensions(250px, 90%);
     }
     img {
-      @include dimensions (100%, 100%);
+      @include dimensions(100%, 100%);
       filter: brightness(70%);
     }
   }
@@ -36,34 +36,70 @@
     color: white;
     letter-spacing: 2px;
     padding: 10px;
-    @include dimensions (60%, 50%);
-    @include flex (flex, center, center);
+    @include dimensions(60%, 50%);
+    @include flex(flex, center, center);
     @media only screen and (max-width: 700px) {
       width: 90%;
     }
     h2 {
       font-size: 3rem;
+      @media only screen and (max-width: 700px) {
+        font-size: 2.5rem;
+      }
     }
     p {
       font-size: 1.3rem;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.1rem;
+        line-height: 25px;
+      }
     }
   }
   &__buttons {
     width: 400px;
-    @include flex (flex, space-between, none);
+    @include flex(flex, space-between, none);
     @media only screen and (max-width: 700px) {
-      width: 250px;
-      flex-direction: column;
+      width: 350px;
+      justify-content: space-around;
+      align-items: center;
     }
   }
-  
+  &__challenges {
+    @include dimensions(400px, 100%);
+    @include flex(flex, space-around, none);
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      @include dimensions(100%, 100%);
+      @include flex(flex, space-around, center);
+    }
+    &--card {
+      @include dimensions(100%, 33%);
+      @include flex(flex, center, center);
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      @media only screen and (max-width: 700px) {
+        @include dimensions(300px, 80%);
+        border-top: 1px solid white;
+      }
+      > p {
+        padding: 3rem;
+        @media only screen and (max-width: 700px) {
+          padding: 0;
+        }
+      }
+      >h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 .stickyNav {
   background: black;
   color: white;
   overflow: hidden;
-  @include dimensions (90px, 100%);
-  @include flex (flex, center, center);
+  @include dimensions(90px, 100%);
+  @include flex(flex, center, center);
   position: sticky;
   top: 0;
   z-index: 10;

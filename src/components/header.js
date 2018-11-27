@@ -9,7 +9,7 @@ const Header = () => {
       <section className="banner">
         <h2>Fullstack Web Developer</h2>
         <p>Charlotte, NC</p>
-        <a href={require('../assets/resume.pdf')}download><button className="redButton">Resume</button></a>
+        <a className="margin-top" href={require('../assets/resume.pdf')}download><button className="redButton">Resume</button></a>
       </section>
     </header>
   );

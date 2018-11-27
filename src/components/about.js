@@ -10,7 +10,7 @@ const About = () => {
       <div className="container">
         <InViewMonitor
           classNameNotInView="container__images"
-          classNameInView="container__images show">
+          classNameInView="container__images show animated fadeIn slower">
             <div className="container__images--one" />
             <div className="container__images--two" />
             <div className="container__images--three" />
@@ -56,7 +56,7 @@ const About = () => {
         </div>
         <InViewMonitor
           classNameNotInView="r2h__images"
-          classNameInView="r2h__images show">
+          classNameInView="r2h__images show animated fadeIn slower">
             <div className="r2h__images--one" />
             <div className="r2h__images--two" />
             <div className="r2h__images--three" />

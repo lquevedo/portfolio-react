@@ -51,7 +51,7 @@
     }
     &--one {
       @include dimensions (400px, 300px);
-      @include background (url("../images/image1.JPG"), cover, no-repeat, left);
+      @include background (url("/images/image1.JPG"), cover, no-repeat, left);
       @include position (absolute, 100px, 30px);
       @media only screen and (max-width: 1400px) {
         display: none;
@@ -62,7 +62,7 @@
     }
     &--two {
       @include dimensions (300px, 400px);
-      @include background (url("../images/image2.jpg"), cover, no-repeat, center);
+      @include background (url("/images/image2.jpg"), cover, no-repeat, center);
       @include position (absolute, 200px, 250px);
       @media only screen and (max-width: 1400px) {
         position: initial;
@@ -75,7 +75,7 @@
     }
     &--three {
       @include dimensions (300px, 400px);
-      @include background (url("../images/image3.jpg"), cover, no-repeat, center);
+      @include background (url("/images/image3.jpg"), cover, no-repeat, center);
       @include position (absolute, 450px, 130px);
       @media only screen and (max-width: 1400px) {
         display: none;
@@ -86,14 +86,6 @@
       }
     }
   }
-}
-
-@keyframes show {
-  0% {opacity: 0;}
-  25% {opacity: 0.25;}
-  50% {opacity: 0.5;}
-  75% {opacity: 0.75;}
-  100% {opacity: 1;}
 }
 
 .r2h {
@@ -130,7 +122,7 @@
     }
     &--one {
       @include dimensions (40%, 600px);
-      @include background (url("../images/rv3.jpg"), cover, no-repeat, center);
+      @include background (url("/images/rv3.jpg"), cover, no-repeat, center);
       @include position (absolute, 100px, 100px);
       @media only screen and (max-width: 1400px) {
         position: initial;
@@ -139,7 +131,7 @@
     }
     &--two {
       @include dimensions (40%, 600px);
-      @include background (url("../images/rv1.jpg"), cover, no-repeat, center);
+      @include background (url("/images/rv1.jpg"), cover, no-repeat, center);
       @include position (absolute, 430px, 40px);
       @media only screen and (max-width: 1400px) {
         position: initial;
@@ -151,7 +143,7 @@
 
 .show {
   opacity: 1;
-  animation-name: show;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
+  // animation-name: show;
+  // animation-duration: 2s;
+  // animation-timing-function: ease-in;
 }
